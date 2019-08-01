@@ -11,34 +11,81 @@
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
-  "id": 0,
-  "name": "Example",
-  "email": "examples@you.edu",
-  "gender": "F"
+    "id": 0,
+    "name": "Example",
+    "email": "examples@you.edu",
+    "gender": "F"
 }
 
 // Write your intern objects here:
 
+const internMitzi = {
+    id: 1,
+    email: "mmelloy0@psu.edu",
+    firstName: "Mitzi",
+    gender: "F",
+}
+
+const internKennan = {
+    id: 2,
+    email: "kdiben1@tinypic.com",
+    firstName: "Kennan",
+    gender: "M",
+    speak: function speak() {
+        console.log("Hello my name is Kennan!")
+    }
+}
+
+const internKeven = {
+    id: 3,
+    email: "kmummery2@wikimedia.org",
+    firstName: "Keven",
+    gender: "M",
+}
+
+const internGannie = {
+    id: 4,
+    email: "gmartinson3@illinois.edu",
+    firstName: "Gannie",
+    gender: "M",
+}
+
+const internAntonietta = {
+    id: 5,
+    email: "adaine5@samsung.com",
+    firstName: "Antonietta",
+    gender: "F",
+    multiplyNums: function multiply(num1, num2) {
+        return num1 * num2;
+    }
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(internMitzi.firstName);
 
 // Kennan's ID
+console.log(internKennan.id);
 
 // Keven's email
+console.log(internKeven.email);
 
 // Gannie's name
+console.log(internGannie.firstName);
 
 // Antonietta's Gender
+console.log(internAntonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+console.log(internKennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+console.log(internAntonietta.multiplyNums(3, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
